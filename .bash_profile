@@ -12,19 +12,13 @@ set -o noclobber
 # Enable cyclic tabbing
 bind '"\t":menu-complete'
 
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
-
-# Append to the Bash history file, rather than overwriting it
-shopt -s histappend
-
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell
-
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
+# * Case insensitive globbing
+# * Append to hist file rather than append, usefull when multiplexing
+# * Autocorrect typos in pathnames
+for option in autocd globstar nocaseglob histappend cdspell; do
 	shopt -s "$option" 2> /dev/null
 done
 
