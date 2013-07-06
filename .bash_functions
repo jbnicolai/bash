@@ -126,3 +126,9 @@ function unquarantine() {
 		xattr -r -d "$attribute" "$@"
 	done
 }
+
+
+# Symlink all dotfiles in the directory to the home directory
+function linkdotfiles() {
+    find . -type f -name ".*" -exec ln -f '{}' ~ ';'
+}
