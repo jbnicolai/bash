@@ -1,0 +1,8 @@
+# Don't map arrow keys to command index, also search on typed text
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set completion-query-items 10000
+
