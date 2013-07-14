@@ -33,7 +33,9 @@ if [ $? -eq 0 ]; then
 fi
 
 # Init fasd
-eval "$(fasd --init auto)"
-_fasd_bash_hook_cmd_complete v
+if [ hash fasd 2>/dev/null ]; then
+    eval "$(fasd --init auto)";
+    _fasd_bash_hook_cmd_complete v;
+fi;
 
 # vim: set ft=sh:
