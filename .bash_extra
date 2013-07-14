@@ -33,7 +33,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # Init fasd
-if [ hash fasd 2>/dev/null ]; then
+if type fasd &>/dev/null; then
     eval "$(fasd --init auto)";
     _fasd_bash_hook_cmd_complete v;
 fi;
