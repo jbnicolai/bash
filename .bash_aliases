@@ -15,6 +15,8 @@ alias hide='history -d $((HISTCMD-1))'
 alias hid='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
 
 # Git shortcuts
+alias g="git"
+complete -o default -o nospace -F _git g
 alias gits="git status"
 alias gitl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
 
