@@ -110,3 +110,6 @@ alias utree="tree -I 'Library|ProjectSettings|Temp|*.meta'"
 
 # fasd vim shortcut
 alias v='f -t -e vim -b viminfo'
+
+# lock osx
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
