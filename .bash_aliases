@@ -17,8 +17,9 @@ alias hid='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
 # Git shortcuts
 alias g="git"
 complete -o default -o nospace -F _git g
-alias gits="git status"
-alias gitl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
+alias gs="git status"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
+__git_complete gl _git_log
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
