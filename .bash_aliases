@@ -20,6 +20,8 @@ complete -o default -o nospace -F _git g
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
 __git_complete gl _git_log
+alias gd="git diff"
+__git_complete gd _git_diff
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
