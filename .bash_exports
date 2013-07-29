@@ -28,7 +28,11 @@ export USE_PATCHED_FONT="true"
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/
 export ANDROID_NDK_ROOT=/usr/local/Cellar/android-ndk/
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)"
+
+if [ -f "/usr/libexec/java_home" ]; then
+    export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)";
+fi
+
 export MAVEN_OPTS="-Djava.awt.headless=true -Xms256m -Xmx1024m -XX:MaxPermSize=512m -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Xss512k"
 
 # vim: set ft=sh:
