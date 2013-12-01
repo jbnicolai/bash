@@ -116,3 +116,6 @@ alias v='f -t -e vim -b viminfo'
 
 # lock osx
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# tmux with colour support
+alias tmux="TERM=screen-256color-bce tmux"
