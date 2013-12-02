@@ -34,8 +34,8 @@ fi
 
 # Init fasd
 if type fasd &>/dev/null; then
-    eval "$(fasd --init auto)";
-    _fasd_bash_hook_cmd_complete v;
+  eval "$(fasd --init auto)";
+  _fasd_bash_hook_cmd_complete v;
 fi;
 
 # vim: set ft=sh:
