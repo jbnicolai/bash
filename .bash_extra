@@ -4,6 +4,9 @@ set bell-style none
 # Dont override files with >, force >|
 set -o noclobber
 
+# Allow forward search with C^s
+stty stop ""
+
 # Enable cyclic tabbing
 bind '"\t":menu-complete'
 
