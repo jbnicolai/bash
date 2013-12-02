@@ -31,6 +31,8 @@ export ANDROID_HOME=/usr/local/Cellar/android-sdk/
 
 if [ -f "/usr/libexec/java_home" ]; then
     export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)";
+elif [ -d " /usr/lib/jvm/java-6-oracle" ]; then
+  export JAVA_HOME="/usr/lib/jvm/java-6-oracle";
 fi
 
 export MAVEN_OPTS="-Djava.awt.headless=true -Xms256m -Xmx1024m -XX:MaxPermSize=512m -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Xss512k"
