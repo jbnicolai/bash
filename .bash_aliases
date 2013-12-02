@@ -18,7 +18,7 @@ alias hid='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
 alias g="git"
 complete -o default -o nospace -F _git g
 alias gs="git status"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 __git_complete gl _git_log
 alias gd="git diff"
 __git_complete gd _git_diff
@@ -113,6 +113,8 @@ alias utree="tree -I 'Library|ProjectSettings|Temp|*.meta'"
 
 # fasd vim shortcut
 alias v='f -t -e vim -b viminfo'
+
+alias chrome=google-chrome
 
 # lock osx
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
