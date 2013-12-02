@@ -38,4 +38,8 @@ if type fasd &>/dev/null; then
   _fasd_bash_hook_cmd_complete v;
 fi;
 
+if type grunt &>/dev/null; then
+  eval "$(grunt --completion=bash)"
+fi;
+
 # vim: set ft=sh:
