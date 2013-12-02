@@ -35,6 +35,6 @@ elif [ -d " /usr/lib/jvm/java-6-oracle" ]; then
   export JAVA_HOME="/usr/lib/jvm/java-6-oracle";
 fi
 
-export MAVEN_OPTS="-Djava.awt.headless=true -Xms256m -Xmx1024m -XX:MaxPermSize=512m -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Xss512k"
+export MAVEN_OPTS="-Djava.awt.headless=true -Xms256m -Xmx2048m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Xss512k"
 
 # vim: set ft=sh:
