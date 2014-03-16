@@ -114,7 +114,11 @@ alias utree="tree -I 'Library|ProjectSettings|Temp|*.meta'"
 # fasd vim shortcut
 alias v='f -t -e vim -b viminfo'
 
-alias chrome=google-chrome
+if hash google-chrome 2>/dev/null; then
+  alias chrome="google-chrome"
+else
+  alias chrome="open -a 'google chrome'"
+fi
 
 # lock osx
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
