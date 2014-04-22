@@ -22,6 +22,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 __git_complete gl _git_log
 alias gd="git diff"
 __git_complete gd _git_diff
+alias gc="git diff --cached"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
