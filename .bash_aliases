@@ -31,6 +31,11 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
+# if github cli is installed, wrap git with it
+if hash hub 2>/dev/null; then
+  alias git=hub
+fi
+
 # List all files colorized in long format
 alias l="ls -Fh ${colorflag}"
 
