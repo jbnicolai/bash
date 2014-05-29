@@ -21,6 +21,10 @@ export HISTCONTROL=erasedups
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
+# Grep match colouring
+export GREP_COLOR='1;35;40'
+export GREP_OPTIONS='--color'
+
 # Powerline settings
 export PLATFORM="mac"
 export USE_PATCHED_FONT="true"
