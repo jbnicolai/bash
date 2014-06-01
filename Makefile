@@ -3,6 +3,7 @@ LINKS =".bash_aliases"  \
 	".bash_completion_maven" \
 	".bash_completion_git" \
 	".bash_exports" \
+	".bash_colours" \
 	".bash_extra" \
 	".bash_functions" \
 	".bash_logout" \

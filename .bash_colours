@@ -1,0 +1,72 @@
+#!/bin/bash
+# gives you a list of colors by name
+
+# Primary color names
+Black="\033[0;30m"
+Red="\033[0;31m"
+Green="\033[0;32m"
+Yellow="\033[0;33m"
+Blue="\033[0;34m"
+Magenta="\033[0;35m"
+Cyan="\033[0;36m"
+White="\033[0;37m"
+Reset="\033[0;39m"
+
+# Bright color names
+BrightBlack="\033[1;30m"
+BrightRed="\033[1;31m"
+BrightGreen="\033[1;32m"
+BrightYellow="\033[1;33m"
+BrightBlue="\033[1;34m"
+BrightMagenta="\033[1;35m"
+BrightCyan="\033[1;36m"
+BrightWhite="\033[1;37m"
+
+# background
+BackgroundBlack="\033[;40m"
+BackgroundRed="\033[;41m"
+BackgroundGreen="\033[;42m"
+BackgroundYellow="\033[;43m"
+BackgroundBlue="\033[;44m"
+BackgroundMagenta="\033[;45m"
+BackgroundCyan="\033[;46m"
+BackgroundWhite="\033[;47m"
+BackgroundReset="\033[;49m"
+
+# testing function
+test_colors() {
+  ## normal
+  ### foregrounds
+  echo -e "FOREGROUNDS"
+  echo -e "Black = ${Black}this is Black${Reset}"
+  echo -e "Red = ${Red}this is Red${Reset}"
+  echo -e "Green = ${Green}this is Green${Reset}"
+  echo -e "Yellow = ${Yellow}this is Yellow${Reset}"
+  echo -e "Blue = ${Blue}this is Blue${Reset}"
+  echo -e "Magenta = ${Magenta}this is Magenta${Reset}"
+  echo -e "Cyan = ${Cyan}this is Cyan${Reset}"
+  echo -e "White = ${White}this is White${Reset}"
+
+  ## bright
+  ### foregrounds
+  echo -e "\nBright FOREGROUNDS"
+  echo -e "Black = ${BrightBlack}this is BrightBlack${Reset}"
+  echo -e "Red = ${BrightRed}this is BrightRed${Reset}"
+  echo -e "Green = ${BrightGreen}this is BrightGreen${Reset}"
+  echo -e "Yellow = ${BrightYellow}this is BrightYellow${Reset}"
+  echo -e "Blue = ${BrightBlue}this is BrightBlue${Reset}"
+  echo -e "Magenta = ${BrightMagenta}this is BrightMagenta${Reset}"
+  echo -e "Cyan = ${BrightCyan}this is BrightCyan${Reset}"
+  echo -e "White = ${BrightWhite}this is BrightWhite${Reset}"
+
+  ## backgrounds
+  echo -e "\nBACKGROUNDS"
+  echo -e "Black = ${BackgroundBlack}this is Black${Reset}"
+  echo -e "Red = ${BackgroundRed}this is Red${Reset}"
+  echo -e "Green = ${BackgroundGreen}this is Green${Reset}"
+  echo -e "Yellow = ${BackgroundYellow}this is Yellow${Reset}"
+  echo -e "Blue = ${BackgroundBlue}this is Blue${Reset}"
+  echo -e "Magenta = ${BackgroundMagenta}this is Magenta${Reset}"
+  echo -e "Cyan = ${BackgroundCyan}this is Cyan${Reset}"
+  echo -e "White = ${BackgroundWhite}this is White${Reset}"
+}
