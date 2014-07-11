@@ -132,3 +132,17 @@ function unquarantine() {
 function linkdotfiles() {
     find . -type f -name ".*" -exec ln -f '{}' ~ ';'
 }
+
+# npm publish with goodies
+# prerequisite: `npm install -g trash`
+# `np` with an optional argument `patch`/`minor`/`major`/`<version>`
+# defaults to `patch`
+np() {
+  trash node_modules &>/dev/null;
+  git pull --rebase && \
+  npm install && \
+  npm test && \
+  npm version "${1:-patch}" && \
+  npm publish && \
+  git push --follow-tags
+}
