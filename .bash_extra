@@ -30,8 +30,8 @@ complete -W "NSGlobalDomain" defaults
 # If possible, add tab completion for many more commands
 which brew &>/dev/null
 if [ $? -eq 0 ]; then
-    if [ -f $(brew --prefix)/etc/bash_completion ]; then
-        . $(brew --prefix)/etc/bash_completion
+    if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
+        . "$(brew --prefix)"/etc/bash_completion
     fi
 fi
 

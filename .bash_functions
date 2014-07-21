@@ -14,7 +14,7 @@ function fs() {
 	if [[ -n "$@" ]]; then
 		du $arg -- "$@"
 	else
-		du $arg .[^.]* *
+		du $arg .[^.]* ./*
 	fi
 }
 
@@ -80,7 +80,7 @@ function gmail() {
 # Get gzipped file size
 function gz() {
 	echo "orig size (bytes): "
-	cat "$1" | wc -c
+	wc -c "$1"
 	echo "gzipped size (bytes): "
 	gzip -c "$1" | wc -c
 }
@@ -104,7 +104,7 @@ function digga() {
 
 # Escape UTF-8 characters into their 3-byte format
 function escape() {
-	printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u)
+	printf "\\\x%s" "$(printf \"$@\" | xxd -p -c1 -u)"
 	echo # newline
 }
 

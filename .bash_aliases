@@ -11,8 +11,8 @@ alias o="open"
 alias oo="open ."
 
 # Delete from history
-alias hide='history -d $((HISTCMD-1))'
-alias hid='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
+alias hide="history -d $((HISTCMD-1))"
+alias hid="history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))"
 
 # Git shortcuts
 alias g="git"
@@ -43,7 +43,7 @@ alias l="ls -Fh ${colorflag}"
 alias la="ls -lA ${colorflag}"
 
 # List only directories
-alias lsd='ls -l ${colorflag} | grep "^d"'
+alias lsd="ls -l ${colorflag} | grep '^d\'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"

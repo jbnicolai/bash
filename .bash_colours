@@ -31,7 +31,6 @@ BackgroundBlue="\033[;44m"
 BackgroundMagenta="\033[;45m"
 BackgroundCyan="\033[;46m"
 BackgroundWhite="\033[;47m"
-BackgroundReset="\033[;49m"
 
 # testing function
 test_colors() {
