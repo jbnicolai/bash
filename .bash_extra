@@ -16,7 +16,7 @@ bind '"\t":menu-complete'
 # * Case insensitive globbing
 # * Append to hist file rather than append, usefull when multiplexing
 # * Autocorrect typos in pathnames
-for option in autocd globstar nocaseglob histappend cdspell; do
+for option in globstar nocaseglob histappend cdspell; do
 	shopt -s "$option" 2> /dev/null
 done
 
