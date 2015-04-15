@@ -1,4 +1,12 @@
 # vim: set ft=sh:
+
+function command_not_found_handle() {
+  if [[ -x "./node_modules/.bin/$1" ]]; then
+    read -p "Want to run \"./node_modules/.bin/$*\" instead?"
+    "./node_modules/.bin/""$@"
+  fi
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$@"
