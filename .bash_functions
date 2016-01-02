@@ -29,6 +29,16 @@ function fs() {
 	fi
 }
 
+function vimhtml() {
+  if [ -z "$1" ]; then
+    echo 'output html filename required';
+    exit 1;
+  fi
+
+  vim -c 'AnsiEsc' -c 'set nowrap' -c 'TOhtml' -c 'wq'" $1" -c 'qa!' -
+}
+
+
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
