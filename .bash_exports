@@ -27,7 +27,7 @@ export GREP_OPTIONS='--color'
 
 # Powerline settings
 export PLATFORM="mac"
-export USE_PATCHED_FONT="true"
+export USE_PATCHED_FONT="false"
 
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/
 export ANDROID_NDK_ROOT=/usr/local/Cellar/android-ndk/
