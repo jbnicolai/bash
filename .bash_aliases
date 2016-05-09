@@ -92,8 +92,7 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # Disable Spotlight
-alias spotoff="sudo mduti100  4832  100  4832    0     0   7899      0 --:--:-- --:--:-- --:--:--  9881
-l -a -i off"
+alias spotoff="sudo mduti l -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
