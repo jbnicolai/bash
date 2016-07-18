@@ -36,6 +36,4 @@ export ANDROID_HOME=/usr/local/Cellar/android-sdk/
 export MAVEN_OPTS="-Djava.awt.headless=true -Xms256m -Xmx2048m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Xss512k"
 
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
 # vim: set ft=sh:
